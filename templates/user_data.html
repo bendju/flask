@@ -1,0 +1,54 @@
+{% extends 'buys.html' %}
+
+{% block content %}
+
+<div id="buy-container">
+    <form class="row g-3" method="post" action="" ><h1>Your Data</h1>
+      <div class="alert alert-dark" role="alert">
+        The authenticity of your data is important, because we send the package based on this.
+      </div>
+      <div class="col-md-12">
+        <input type="text" class="form-control" id="validationDefault01" placeholder="First Name" required  name="first">
+      </div>
+      <div class="col-md-12">
+        <input type="text" class="form-control" id="validationDefault02" placeholder="Last Name" required name="last">
+      </div>
+      <div class="col-md-12">
+        <input type="text" class="form-control" id="validationDefault05" placeholder="Zip Code + Your Full Address" required name="address">
+      </div>
+      <div class="col-md-12">
+        <input type="text" class="form-control" id="validationDefault05" placeholder="E-Mail" required name="email">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree<button type="button" class="btn btn-light align-middle" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              terms
+            </button> to and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      <div class="col-12 next-btn" style="margin-bottom: 20px;">
+        <button class="btn btn-dark" type="submit" style="margin-top: 20px;">Next</button>
+      </div>
+    </form>
+  </div>
+  
+
+
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">terms</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <p>If you do not provide a real email address and address, we will not be able to deliver the package. Please ensure that the data is accurate.</p>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

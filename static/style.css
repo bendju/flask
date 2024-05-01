@@ -1,0 +1,333 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color:#d4d6db;
+}
+#adminform{
+  width: 70%;
+  padding: 40px;
+  background-color: #555a6d;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.slideshow {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 90%; 
+  height: 60%; 
+  overflow: hidden;
+  background-color: white;
+  border-radius: 10px;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease; /* Animáció a képváltáshoz */
+}
+.slide {
+  min-width: 100%; 
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  cursor: pointer;
+  height: 100%;
+  width: 25%;
+  text-align: center;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+#bottom_nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+}
+a{
+text-decoration: none;
+color: white;
+}
+#ar{
+padding-left: 20px;
+color: red;
+font-size: xxx-large;
+}
+#cart-btn{
+width: 100%;
+height: 70px;
+
+}
+#descript{
+margin-top: 40px;
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+border-radius: 10px;
+}
+#descript >img{
+width: 100%;
+}
+p{
+padding: 10px;
+font-weight: bold;
+color: #555a6d;
+font-style: italic;
+}
+#reveiw {
+margin-top: 40px;
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+border-radius: 10px;
+overflow-x: scroll; 
+white-space: nowrap; 
+}
+.cards{
+display: inline-block;
+width: 200px; 
+height: 200px; 
+border: 1px solid #000;
+white-space: normal;
+margin: 30px;
+}
+
+#contact {
+margin-top: 40px;
+width: 100%;
+background-color: black;
+font-weight: bold;
+font-style: italic;
+padding: 10px;
+}
+#contact >p{
+color: white;
+}
+footer{
+background-color: black;
+text-align: center;
+color: white;
+margin-bottom: 40px;
+padding: 20px;
+}
+hr{
+color: white;
+width: 100%;
+padding: 0;
+margin: 0;
+}
+.addreview {
+width: 95%;
+height: 70px;
+margin-left: auto;
+margin-right: auto;
+}
+#buy-container {
+border-radius: 10px;
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+margin-top: 80px;
+text-align: center;
+}
+.pad {
+margin: 5px;
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+
+
+
+/* Stílusok nagyobb képernyőméretekhez (asztali) */
+@media (min-width: 1024px) {
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color:#d4d6db;
+}
+#adminform{
+    width: 25%;
+    padding: 40px;
+    background-color: #555a6d;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.addreview {
+  width: 100%;
+  height: 70px;
+  float: left;
+  margin-left: 20px;
+}
+.buy-button {
+  height: 70px;
+}
+#main {
+  padding: 20px;
+  width:40%;
+}
+
+#buy-container {
+  border-radius: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  margin-top: 90px;
+  text-align: center;
+  padding: 0px;
+}
+.slideshow {
+    margin-top: 50px;
+
+    position: relative;
+    height: 50%; 
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    
+  }
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease; /* Animáció a képváltáshoz */
+  }
+  .slide {
+    min-width: 100%; 
+  }
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+    text-align: center;
+  }
+  .prev {
+    left: 0;
+  }
+.next {
+  right: 0;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+#ar{
+  padding-left: 20px;
+  color: red;
+  font-size: xxx-large;
+}
+#cart-btn{
+  width: 10px;
+  height: 70px;
+}
+#descript{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+#descript >img{
+  width: 50%;
+}
+p{
+  padding: 10px;
+  font-weight: bold;
+  color: #555a6d;
+  font-style: italic;
+}
+#reveiw {
+  background-color: white;
+  border-radius: 10px;
+  overflow-x: scroll; 
+  white-space: nowrap; 
+}
+#main2 {
+  margin-top: 40px;
+  width: 37%;
+  margin-left: 40px;
+  padding: 20px;
+}
+.cards{
+  display: inline-block;
+  width: 200px; 
+  height: 200px; 
+  border: 1px solid #000;
+  white-space: normal;
+  margin: 30px;
+}
+
+#contact {
+  margin-top: 40px;
+  width: 100%;
+  background-color: black;
+  font-weight: bold;
+  font-style: italic;
+  padding: 10px;
+}
+#contact >p{
+  color: white;
+}
+footer{
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+hr{
+  color: white;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+.pad {
+  margin: 5px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ #descript {
+  padding-top: 200px;
+ }
+
+}

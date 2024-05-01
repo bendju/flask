@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #button{
+        width: 100%;
+        background-color: black;
+        height: 60px;
+        color: aliceblue;
+    }
+    #table {
+        width: 100%;
+        border: 3px solid black;
+        margin-top: 40px;
+    }
+
+    </style>
+</head>
+<body>
+    <div><a href="/logout"><button id="button">logout</button></a></div>
+    <div id="meg">
+        {% for meg in megrendeles %}
+        <table id="table">
+            <tr><td>{{meg.name}}</td></tr>
+            <tr><td>{{meg.address}}</td></tr>
+            <tr><td>{{meg.email}}</td>
+            <td>   
+                <form action="{{ url_for('delete', order_id=meg.id) }}" method="post"><button>del</button></form>
+                {{meg.id}}
+            </td>
+            </tr>
+            <tr></tr>
+        </table>
+        {% endfor %}
+    </div>
+</body>
+</html>

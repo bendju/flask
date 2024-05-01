@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/3236965058.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Sapka</a>
+          <a href="/buy"><button type="button" class="btn btn-dark" data-bs-toggle="modal" aria-selected="false" role="tab"><i class="fa-solid fa-money-check-dollar"></i> Buy</button></a>
+        </div>
+      </nav>
+
+
+<div id="main">
+  <div class="slideshow">
+    <div class="slides">
+      <img class="slide img-fluid" src="../static/kep1.jpg" alt="Kép 1">
+      <img class="slide img-fluid" src="../static/kep2.jpg" alt="Kép 2">
+      <img class="slide img-fluid" src="../static/kep1.jpg" alt="Kép 3">
+    </div>
+      <div class="prev" onclick="prevSlide()"><i class="fa-solid fa-arrow-left  fa-2xl" style="color: black;padding-top: 300%;"></i></div>
+      <div class="next" onclick="nextSlide()"><i class="fa-solid fa-arrow-right fa-2xl" style="color: black;padding-top: 300%;"></i></div>
+      <h1 id="ar">7.8 $</h1>
+  </div>
+
+  <div class="d-flex align-items-center justify-content-center">
+    <a href="/buy" id="addreview" class="addreview"><button type="button" class="btn btn-dark addreview" id="addreview">Buy Now</button></a>
+  </div>
+
+
+
+
+<div id="reveiw">
+  <div class="card cards" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Sarah</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  <div class="card cards" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Sarah</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  <div class="card cards" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Sarah</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  <div class="card cards" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Sarah</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex align-items-center justify-content-center">
+  <button type="button" class="btn btn-dark addreview" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    add your evaluation
+  </button>
+</div>
+</div>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Evaluation</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="form-floating pad">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">name</label>
+      </div>
+
+      <div class="form-floating pad">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">comment</label>
+      </div>
+
+      <div class="modal-body">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Stars</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</div>
+  <div id="descript">
+    <p>NAGY ONLINE WEBSHOP KFT. kft. (a továbbiakban: Kereskedő vagy Vállalkozás) fő tevékenysége az értékesítésben Autórádió beépítő keretek,hangszóró beépítő keretek,ISO csatlakozók szinte minden autótípushoz megtalálható webáruházunkban!.
+      Cég neve: NAGY ONLINE WEBSHOP KFT. kft.
+      Székhely: 1164.Bp.Felsőmalom utca 20. 2 emelet, 17-es csengő, Budapest, XVI. kerulet, Pest, 1161
+      Cégjegyzékszám:
+      Adószám: 23273991-2-42
+      IBAN: HU96120115260151740700100006
+      Bank: RAIFFEISEN BANK ZRT.
+      Telefonszám: +36209316860
+      Támogatás: Találjon választ a kérdéseire az eMAG Help-en
+      Szabály: Kereskedő
+    </p>
+    <img id="descript-img" src="../static/kep1.jpg" alt="">
+    <p>NAGY ONLINE WEBSHOP KFT. kft. (a továbbiakban: Kereskedő vagy Vállalkozás) fő tevékenysége az értékesítésben Autórádió beépítő keretek,hangszóró beépítő keretek,ISO csatlakozók szinte minden autótípushoz megtalálható webáruházunkban!.
+      Cég neve: NAGY ONLINE WEBSHOP KFT. kft.
+      Székhely: 1164.Bp.Felsőmalom utca 20. 2 emelet, 17-es csengő, Budapest, XVI. kerulet, Pest, 1161
+      Cégjegyzékszám:
+      Adószám: 23273991-2-42
+      IBAN: HU96120115260151740700100006
+      Bank: RAIFFEISEN BANK ZRT.
+      Telefonszám: +36209316860
+      Támogatás: Találjon választ a kérdéseire az eMAG Help-en
+      Szabály: Kereskedő</p>
+      <img id="descript-img" src="../static/kep1.jpg" alt="">
+      <p>NAGY ONLINE WEBSHOP KFT. kft. (a továbbiakban: Kereskedő vagy Vállalkozás) fő tevékenysége az értékesítésben Autórádió beépítő keretek,hangszóró beépítő keretek,ISO csatlakozók szinte minden autótípushoz megtalálható webáruházunkban!.
+      Cég neve: NAGY ONLINE WEBSHOP KFT. kft.
+      Székhely: 1164.Bp.Felsőmalom utca 20. 2 emelet, 17-es csengő, Budapest, XVI. kerulet, Pest, 1161
+      Cégjegyzékszám:
+      Adószám: 23273991-2-42
+      IBAN: HU96120115260151740700100006
+      Bank: RAIFFEISEN BANK ZRT.
+      Telefonszám: +36209316860
+      Támogatás: Találjon választ a kérdéseire az eMAG Help-en
+      Szabály: Kereskedő</p>
+      <img id="descript-img" src="../static/kep1.jpg" alt="">
+      <p>NAGY ONLINE WEBSHOP KFT. kft. (a továbbiakban: Kereskedő vagy Vállalkozás) fő tevékenysége az értékesítésben Autórádió beépítő keretek,hangszóró beépítő keretek,ISO csatlakozók szinte minden autótípushoz megtalálható webáruházunkban!.
+        Cég neve: NAGY ONLINE WEBSHOP KFT. kft.
+        Székhely: 1164.Bp.Felsőmalom utca 20. 2 emelet, 17-es csengő, Budapest, XVI. kerulet, Pest, 1161
+        Cégjegyzékszám:
+        Adószám: 23273991-2-42
+        IBAN: HU96120115260151740700100006
+        Bank: RAIFFEISEN BANK ZRT.
+        Telefonszám: +36209316860
+        Támogatás: Találjon választ a kérdéseire az eMAG Help-en
+        Szabály: Kereskedő
+      </p>
+  </div>
+</div>
+
+
+<div id="contact">
+<footer><p>Your privacy and a smooth shopping experience are important to me, but if you have any problems, please email me at: valami@gmail.com</p>
+<hr>
+beni production</footer>
+</div>
+
+
+<script src="../static/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
